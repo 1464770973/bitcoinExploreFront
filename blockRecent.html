@@ -19,7 +19,7 @@
 
             <el-table-column label="高度">
                 <template slot-scope="scope">
-                    <a :href="'http://www.baidu.com/'+scope.row.height">{{scope.row.height}}</a>
+                    <a :href="'blockByHeight.html?blockheight='+scope.row.height">{{scope.row.height}}</a>
                 </template>
             </el-table-column>
             <el-table-column label="时间" prop="showtime"></el-table-column>

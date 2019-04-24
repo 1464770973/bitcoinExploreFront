@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/elementui.css">
+    <title>block详情</title>
+</head>
+
+<body>
+    <div id="app">
+        <el-table :data="showBlockHeight">
+         <el-table-column label="blockhash" prop="blockhash"></el-table-column>
+         <el-table-column label="height" prop="blockheight" ></el-table-column>
+         <el-table-column label="time" prop="time"></el-table-column>
+         <el-table-column label="txSize" prop="txSize"></el-table-column>
+         <el-table-column label="sizeOnDisk" prop="sizeOnDisk"></el-table-column>
+         <el-table-column label="difficulty" prop="difficulty"></el-table-column>
+         <el-table-column label="prevBlockhash" prop="prevBlockhash"></el-table-column>
+         <el-table-column label="nextBlockhash" prop="nextBlockhash"></el-table-column>
+         <el-table-column label="outputTotal" prop="outputTotal"></el-table-column>
+
+         <el-table-column label="transactionFees" prop="transactionFees"></el-table-column>
+         <el-table-column label="merkleRoot" prop="merkleRoot"></el-table-column>
+         <el-table-column label="transactions" prop="transactions"></el-table-column>
+         
+        </el-table>
+    </div>
+
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/elementui.js"></script>
+    <script src="view/blockByHeight.js"></script>
+
+</body>
+
+</html>
