@@ -1,32 +1,21 @@
 var app = new Vue({
     el:'#app',
     data:{
-        recentBlocks:[]
+        transaction:[]
         
     },
-    computed: {
-        showRecentBlocks(){
-            var now = Date.now();
-            this.recentBlocks.forEach(block => {
-                block.showtime = parseInt((now-block.time)/1000/60);
-                block.showSizeOnDisk = block.sizeOnDisk.toLocaleString('en');
-                
-            });
-            return this.recentBlocks;
-        }
-        
-    },
+   
     mounted () {
         console.log("view mounted");
-        this.getBlockRecent();
+        this.getTransaction();
         
     },
     methods: {
-        getBlockRecent(){
-            axios.get('http://localhost:8080/block/getRecentBlocks')
+        getTransaction(){
+            axios.get('http://localhost:8080/transaction/getTransaction')
             .then(function(response){
                 console.log(response);
-                app.recentBlocks = response.data;
+                app.transaction = response.data;
             })
             .catch(function(error){
                 console.log(error);
