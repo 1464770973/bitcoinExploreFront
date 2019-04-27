@@ -17,7 +17,7 @@
 
             <el-table-column label="交易hash">
                 <template slot-scope="scope">
-                    <a :href="'transactionByTxhash.html?txhash='+scope.row.txhash">{{scope.row.txhash}}</a>
+                    <a :href="'transactionByTxhash?txhash='+scope.row.txhash">{{scope.row.txhash}}</a>
                 </template>
             </el-table-column>
             <el-table-column label="时间" prop="time"></el-table-column>

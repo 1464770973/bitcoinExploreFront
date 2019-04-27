@@ -11,22 +11,19 @@
 
 <body>
     <div id="app">
-        <el-table :data="showBlockHeight">
-         <el-table-column label="blockhash" prop="blockhash"></el-table-column>
-         <el-table-column label="height" prop="height" ></el-table-column>
-         <el-table-column label="time" prop="time"></el-table-column>
-         <el-table-column label="txSize" prop="txSize"></el-table-column>
-         <el-table-column label="sizeOnDisk" prop="sizeOnDisk"></el-table-column>
-         <el-table-column label="difficulty" prop="difficulty"></el-table-column>
-         <el-table-column label="prevBlockhash" prop="prevBlockhash"></el-table-column>
-         <el-table-column label="nextBlockhash" prop="nextBlockhash"></el-table-column>
-         <el-table-column label="outputTotal" prop="outputTotal"></el-table-column>
-
-         <el-table-column label="transactionFees" prop="transactionFees"></el-table-column>
-         <el-table-column label="merkleRoot" prop="merkleRoot"></el-table-column>
-         <el-table-column label="transactions" prop="transactions"></el-table-column>
-         
-        </el-table>
+        <h1>Block#{{showBlockHeight[0].height}}</h1><br>
+        blockhash:{{showBlockHeight[0].blockhash}}<br>
+        height:{{showBlockHeight[0].height}}<br>
+        time:{{showBlockHeight[0].time}}<br>
+        txSize:{{showBlockHeight[0].txSize}}<br>
+        sizeOnDisk:{{showBlockHeight[0].sizeOnDisk}}<br>
+        difficulty:{{showBlockHeight[0].difficulty}}<br>
+        prevBlockhash:{{showBlockHeight[0].prevBlockhash}}<br>
+        nextBlockhash:{{showBlockHeight[0].nextBlockhash}}<br>
+        outputTotal:{{showBlockHeight[0].outputTotal}}<br>
+        transactionFees:{{showBlockHeight[0].transactionFees}}<br>
+        merkleRoot:{{showBlockHeight[0].merkleRoot}}<br>
+        transactions:{{showBlockHeight[0].transactions}}<br>
     </div>
 
     <script src="assets/js/axios.min.js"></script>
