@@ -11,19 +11,18 @@
 
 <body>
     <div id="app">
-        <el-table :data="showTrannsactionTxhash">
-            <el-table-column label="txid" prop="txid"></el-table-column>
-            <el-table-column label="txhash" prop="txhash"></el-table-column>
-            <el-table-column label="size" prop="size"></el-table-column>
-            <el-table-column label="weight" prop="weight"></el-table-column>
-            <el-table-column label="time" prop="time"></el-table-column>
-            <el-table-column label="totalInput" prop="totalInput"></el-table-column>
-            <el-table-column label="totalOutput" prop="prevBlockhash"></el-table-column>
-            <el-table-column label="fees" prop="fees"></el-table-column>
-            <el-table-column label="txDetails" prop="txDetails"></el-table-column>
+        <h1>Transaction#{{showTrannsactionTxhash[0].txhash}}</h1><br>
+        txid:{{showTrannsactionTxhash[0].txid}}<br>
+        txhash:{{showTrannsactionTxhash[0].txhash}}<br>
+        size:{{showTrannsactionTxhash[0].size}}<br>
+        weight:{{showTrannsactionTxhash[0].weight}}<br>
+        time:{{showTrannsactionTxhash[0].time}}<br>
+        totalInput:{{showTrannsactionTxhash[0].totalInput}}<br>
+        totalOutput:{{showTrannsactionTxhash[0].totalOutput}}<br>
+        fees:{{showTrannsactionTxhash[0].fees}}<br>
+        txDetails:{{showTrannsactionTxhash[0].txDetails}}<br>
 
 
-        </el-table>
     </div>
 
     <script src="assets/js/axios.min.js"></script>

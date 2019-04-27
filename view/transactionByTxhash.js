@@ -2,8 +2,7 @@ var app = new Vue({
     el:'#app',
     data:{
         showTrannsactionTxhash:[],
-        txhash:'',
-        
+       
     },
     mounted () {
         console.log("view mounted");
